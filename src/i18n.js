@@ -11,7 +11,7 @@ i18n
     defaultLanguage: "en",
     otherLanguages: ["pl"],
     fallbackLng: "en",
-    debug: true,
+    // debug: true,
     defaultNS: "translation",
     //saveMissing: true,
 
@@ -19,10 +19,9 @@ i18n
       escapeValue: false, // not needed for react as it escapes by default
     },
 
-    // backend: {
-    //   // loadPath: "/identifier/locales/{{lng}}/{{ns}}.json",
-    //   loadPath: "/locales/{{lng}}/{{ns}}.json",
-    // },
+    backend: {
+      loadPath: "/identifier/locales/{{lng}}/{{ns}}.json",
+    },
 
     /* lng: locale.split("-")[0], */
   });
