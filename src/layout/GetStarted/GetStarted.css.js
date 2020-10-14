@@ -36,8 +36,12 @@ export const VerticalNavContainer = styled.div`
     background-color: blue;
     cursor: pointer;
     min-height: 50px;
+    transition: 0.3s;
+    font-size: 12px;
     &:hover {
       background-color: #6f6259;
+
+      transform: scale(1.5) translatex(15%);
     }
   }
 `;
@@ -73,6 +77,7 @@ export const ButtonsContainer = styled.div`
     color: white;
     font-weight: bold;
     padding: 0px 25px;
+    transition: 0.3s;
 
     &:hover {
       background-color: #988b8d;

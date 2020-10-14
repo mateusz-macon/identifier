@@ -27,7 +27,7 @@ const GetStarted = () => {
       <VerticalNavContainer>
         <div>Get started</div>
         <div>Life style</div>
-        <div>Prescription</div>
+        <div>Prescript</div>
         <div>Frame</div>
         <div>Order</div>
       </VerticalNavContainer>
