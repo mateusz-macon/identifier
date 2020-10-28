@@ -1,12 +1,11 @@
 import React from "react";
-import GetStarted from "../layout/GetStarted";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../constants/theme";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TopMenu from "../components/TopMenu";
 import LeftMenu from "../components/LeftMenu";
 import { Wrapper } from "./App.css";
-import LifeStyle from "../layout/LifeStyle";
+import MainContainer from "../layout/MainContainer";
 
 function App() {
   return (
@@ -16,8 +15,7 @@ function App() {
           <TopMenu />
           <LeftMenu />
           <Switch>
-            <Route path="/" component={GetStarted} />
-            <Route path="/" component={LifeStyle} />
+            <Route path="/" component={MainContainer} />
           </Switch>
         </Wrapper>
       </Router>
