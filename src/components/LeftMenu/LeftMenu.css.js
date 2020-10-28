@@ -16,6 +16,7 @@ export const VerticalNavContainer = styled.div`
   div {
     background-color: transparent;
     color: white;
+    user-select: none;
     cursor: pointer;
     min-height: 50px;
     transition: 0.3s;

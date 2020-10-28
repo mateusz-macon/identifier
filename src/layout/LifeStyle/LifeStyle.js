@@ -1,9 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Container } from "./GetStarted.css";
+import { Container } from "./LifeStyle.css";
 import { FaBeer } from "react-icons/fa";
 
-const GetStarted = () => {
+const LifeStyle = () => {
   const { t } = useTranslation(["translation"]);
   return (
     <Container>
@@ -14,4 +14,4 @@ const GetStarted = () => {
   );
 };
 
-export default GetStarted;
+export default LifeStyle;

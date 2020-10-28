@@ -11,6 +11,7 @@ export const HorizontalNavContainer = styled.div`
   min-height: 40px;
   opacity: 100%;
   display: flex;
+  z-index: 1;
 `;
 export const ButtonsContainer = styled.div`
   top: 0;
@@ -19,9 +20,8 @@ export const ButtonsContainer = styled.div`
   width: 90%;
   display: flex;
   justify-content: flex-end;
-  vertical-align: middle;
   align-items: center;
-  justify-content: center;
+  line-height: 5vh;
 
   div {
     text-transform: uppercase;
@@ -29,6 +29,7 @@ export const ButtonsContainer = styled.div`
     border: none;
     background-color: transparent;
     color: white;
+    user-select: none;
     font-weight: bold;
     cursor: pointer;
     padding: 0px 25px;

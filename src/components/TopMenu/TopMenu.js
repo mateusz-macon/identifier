@@ -23,14 +23,15 @@ const LogoHoya = () => {
 };
 
 const TopMenu = () => {
+  const { t } = useTranslation(["translation"]);
   return (
     <HorizontalNavContainer>
       <LogoHoya />
       <ButtonsContainer>
-        <div>new consultation</div>
-        <div>load data</div>
-        <div>settings</div>
-        <div>log out</div>
+        <div>{t("new consultation")}</div>
+        <div>{t("load data")}</div>
+        <div>{t("settings")}</div>
+        <div>{t("log out")}</div>
         <div>language: </div>
       </ButtonsContainer>
     </HorizontalNavContainer>

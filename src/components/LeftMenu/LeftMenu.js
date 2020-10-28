@@ -7,37 +7,38 @@ import { BsCardText } from "react-icons/bs";
 import { BiGlasses, BiCart } from "react-icons/bi";
 
 const LeftMenu = () => {
+  const { t } = useTranslation(["translation"]);
   return (
     <VerticalNavContainer>
       <div>
         <p>
           <RiHomeGearLine style={{ fontSize: "32px" }} />
         </p>
-        Get started
+        {t("Get started")}
       </div>
       <div>
         <p>
           <FaTachometerAlt style={{ fontSize: "32px" }} />
         </p>
-        Life style
+        {t("Life style")}
       </div>
       <div>
         <p>
           <BsCardText style={{ fontSize: "32px" }} />
         </p>
-        Prescript
+        {t("Prescript")}
       </div>
       <div>
         <p>
           <BiGlasses style={{ fontSize: "32px" }} />
         </p>
-        Frame
+        {t("Frame")}
       </div>
       <div>
         <p>
           <BiCart style={{ fontSize: "32px" }} />
         </p>
-        Order
+        {t("Order")}
       </div>
     </VerticalNavContainer>
   );
