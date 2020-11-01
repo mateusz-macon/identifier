@@ -1,14 +1,19 @@
 import React from "react";
 import GetStarted from "../GetStarted";
 import LifeStyle from "../LifeStyle";
-import { Wrapper } from "./MainContainer.css";
+import Prescript from "../Prescript";
+import Frame from "../Frame";
+import Order from "../Order";
 
 const MainContainer = () => {
   return (
-    <Wrapper>
+    <>
       <GetStarted />
       <LifeStyle />
-    </Wrapper>
+      <Prescript />
+      <Frame />
+      <Order />
+    </>
   );
 };
 

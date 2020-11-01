@@ -12,6 +12,7 @@ export const VerticalNavContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  z-index: 1;
 
   div {
     background-color: transparent;
