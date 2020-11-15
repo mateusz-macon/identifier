@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const VerticalNavContainer = styled.div`
   position: fixed;
-  background-color: #428cac;
+  background-color: ${(props) => props.theme.basic.accentBackground};
   top: 5vh;
   left: 0;
   height: 95vh;
@@ -16,7 +16,7 @@ export const VerticalNavContainer = styled.div`
 
   div {
     background-color: transparent;
-    color: white;
+    color: ${(props) => props.theme.basic.textPrimary};
     user-select: none;
     cursor: pointer;
     min-height: 50px;
@@ -25,12 +25,12 @@ export const VerticalNavContainer = styled.div`
     display: block;
     text-align: center;
     &:hover {
-      background-color: #6f6259;
+      background-color: ${(props) => props.theme.basic.hoverMain};
 
       transform: scale(1.5) translatex(15%);
     }
   }
   div.here {
-    background-color: #6f6259;
+    background-color: ${(props) => props.theme.basic.hoverMain};
   }
 `;

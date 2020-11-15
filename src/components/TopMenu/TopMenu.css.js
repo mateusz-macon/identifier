@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import mySelfImage from "../../images/iD-MyStyle-LOGO.jpg";
 
 export const HorizontalNavContainer = styled.div`
   position: fixed;
-  background-color: #428cac;
+  background-color: ${(props) => props.theme.basic.accentBackground};
   top: 0;
   left: 0;
   width: 100%;
@@ -34,16 +33,16 @@ export const ButtonsContainer = styled.div`
     cursor: pointer;
     padding: 0px 25px;
     transition: 0.3s;
-    // line-height: 5vh;
+    line-height: 5vh;
 
     &:hover {
-      background-color: #988b8d;
+      background-color: ${(props) => props.theme.basic.hoverAdditional};
     }
 
     &:active {
       border: none;
       outline: 0;
-      background-color: #6f6259;
+      background-color: ${(props) => props.theme.basic.hoverMain};
     }
     &:focus {
       outline: none;
