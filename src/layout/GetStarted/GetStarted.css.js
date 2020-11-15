@@ -26,7 +26,7 @@ export const NextButton = styled.div`
   font-size: 20px;
   cursor: pointer;
   transition: 0.3s;
-  selection: none;
+  user-select: none;
 
   &:hover {
     background-color: ${(props) => props.theme.basic.hoverAdditional};
