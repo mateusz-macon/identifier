@@ -30,4 +30,7 @@ export const VerticalNavContainer = styled.div`
       transform: scale(1.5) translatex(15%);
     }
   }
+  div.here {
+    background-color: #6f6259;
+  }
 `;
