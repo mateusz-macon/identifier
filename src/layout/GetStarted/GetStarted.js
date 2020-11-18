@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Container, Wrapper, NextButton } from "./GetStarted.css";
+import { Container, Wrapper } from "./GetStarted.css";
+import { NextButton } from "../../constants/NextButton.css";
 
 const GetStarted = () => {
   const { t } = useTranslation(["translation"]);
@@ -11,26 +12,34 @@ const GetStarted = () => {
   };
 
   const handleClickButton = () => {
-    window.scrollTo({
-      top: window.innerHeight - 0.05 * window.innerHeight,
-      behavior: "smooth",
-    });
+    if (selectedLenses <= 0) {
+      setSelectedLenses(-1);
+    } else {
+      window.scrollTo({
+        top: window.innerHeight - 0.05 * window.innerHeight,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
     <Container>
       <Wrapper>
         <h1>{t("Welcome to Hoya Identifier!")}</h1>
-        <p>Welcome to the lens design selector!</p>
+        <p>{t("Welcome to the lens design selector!")}</p>
         <p>
-          To get a good impression of your viewing behaviour, a number of
-          questions will now follow.
+          {t(
+            "To get a good impression of your viewing behaviour, a number of questions will now follow."
+          )}
         </p>
-        <p>Firstly put some id of consultation:</p>
+        <p>{t("Firstly put some id of consultation")}:</p>
 
-        <input type="text" placeholder="Consultation ID" />
-        <p>Chose lenses you want to personalize:</p>
-        <div className="flexcontainer">
+        <input type="text" placeholder={t("placeholder")} />
+        <p>{t("Chose lenses you want to personalize")}:</p>
+        <div
+          className="flexContainer"
+          style={selectedLenses === -1 ? { border: "5px solid red " } : {}}
+        >
           <div
             onClick={(digit) => handleClickLenses(1)}
             style={selectedLenses === 1 ? { opacity: "1 " } : {}}
@@ -45,7 +54,7 @@ const GetStarted = () => {
           ></div>
         </div>
       </Wrapper>
-      <NextButton onClick={handleClickButton}>next</NextButton>
+      <NextButton onClick={handleClickButton}>{t("next")}</NextButton>
     </Container>
   );
 };
