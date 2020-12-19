@@ -25,6 +25,7 @@ const GetStarted = () => {
   return (
     <Container>
       <Wrapper>
+        <div>TEst</div>
         <h1>{t("Welcome to Hoya Identifier!")}</h1>
         <p>{t("Welcome to the lens design selector!")}</p>
         <p>
