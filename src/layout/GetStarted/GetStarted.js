@@ -38,7 +38,13 @@ const GetStarted = () => {
         <p>{t("Chose lenses you want to personalize")}:</p>
         <div
           className="flexContainer"
-          style={selectedLenses === -1 ? { border: "5px solid red " } : {}}
+          style={
+            selectedLenses === -1
+              ? {
+                  animation: "border-pulsate 2s infinite",
+                }
+              : {}
+          }
         >
           <div
             onClick={(digit) => handleClickLenses(1)}

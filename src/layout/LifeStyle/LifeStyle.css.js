@@ -9,12 +9,13 @@ export const Container = styled.div`
 
   background-color: transparent;
 
+  -webkit-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
+
   h1 {
     margin: 0;
-    padding: 0px 0;
-    font-size: 4em;
-    text-align: center;
-    font-weight: normal;
+    padding: 0;
   }
 `;
 
@@ -49,7 +50,6 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  }
 `;
 
 export const FirstContainer = styled.div`
@@ -63,7 +63,8 @@ export const FirstContainer = styled.div`
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    border: 5px solid transparent;
+
+    border: 2px solid transparent;
 
     p {
       padding-right: 30px;
@@ -75,7 +76,7 @@ export const FirstContainer = styled.div`
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    border: 5px solid transparent;
+    border: 2px solid transparent;
 
     div {
       width: 100px;
@@ -107,7 +108,7 @@ export const SecondContainer = styled.div`
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  border: 5px solid transparent;
+  border: 2px solid transparent;
   div {
     margin-right: 30px;
   }
@@ -137,7 +138,7 @@ export const ThirdContainer = styled.div`
   height: 100px;
   align-items: center;
   box-sizing: border-box;
-  border: 5px solid transparent;
+  border: 2px solid transparent;
 
   div {
     margin-right: 30px;
@@ -168,7 +169,7 @@ export const FourthContainer = styled.div`
   height: 100px;
   align-items: center;
   box-sizing: border-box;
-  border: 5px solid transparent;
+  border: 2px solid transparent;
   div {
     margin-right: 30px;
   }
@@ -198,7 +199,7 @@ export const FifthContainer = styled.div`
   height: 100px;
   align-items: center;
   box-sizing: border-box;
-  border: 5px solid transparent;
+  border: 2px solid transparent;
   div {
     margin-right: 30px;
   }
@@ -229,7 +230,7 @@ export const SixthContainer = styled.div`
   height: 100px;
   align-items: center;
   box-sizing: border-box;
-  border: 5px solid transparent;
+  border: 2px solid transparent;
   div {
     margin-right: 30px;
   }

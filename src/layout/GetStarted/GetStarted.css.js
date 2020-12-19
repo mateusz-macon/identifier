@@ -24,15 +24,20 @@ export const Wrapper = styled.div`
   height: 80%;
   background-color: transparent;
 
+  @media (max-width: 1000px) {
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+  }
+
   h1 {
     margin: 0;
-    padding: 50px 0;
-    font-size: 4em;
+
     text-align: center;
     font-weight: normal;
   }
   p {
-    font-size: 24px;
     padding: 10px 0;
   }
   input {
@@ -49,6 +54,7 @@ export const Wrapper = styled.div`
     }
     &:focus {
       outline-style: solid;
+      border: 1px solid black;
       box-shadow: none;
     }
   }
@@ -58,7 +64,24 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     margin: 20px 0 0 0;
     box-sizing: border-box;
-    border: 5px solid transparent;
+    padding: 10px;
+    border: 2px solid transparent;
+
+    @keyframes border-pulsate {
+      0% {
+        border-color: red;
+      }
+      40% {
+        border-color: transparent;
+      }
+      60% {
+        border-color: transparent;
+      }
+
+      100% {
+        border-color: red;
+      }
+    }
 
     div {
       background-image: url(${myselfImage});
@@ -72,13 +95,28 @@ export const Wrapper = styled.div`
       &:hover {
         opacity: 1;
       }
+
+      @media (max-width: 1024px) {
+        width: 200px;
+        height: 120px;
+      }
     }
     div + div {
       background-image: url(${mystyleImage});
       opacity: 0.5;
+
+      @media (max-width: 1024px) {
+        width: 200px;
+        height: 120px;
+      }
     }
     div + div + div {
       background-image: url(${workstyleImage});
+
+      @media (max-width: 1024px) {
+        width: 200px;
+        height: 120px;
+      }
     }
   }
 `;

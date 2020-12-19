@@ -95,8 +95,14 @@ const LifeStyle = () => {
       <h1>Answer a questions about your lifestyle!</h1>
       <Wrapper>
         <FirstContainer>
-          <div style={selectedAge === -1 ? { border: "5px solid red " } : {}}>
-            <p>Your Age: </p>
+          <div
+            style={
+              selectedAge === -1
+                ? { animation: "border-pulsate 2s infinite" }
+                : {}
+            }
+          >
+            <p>Age: </p>
             <CircleButton
               onClick={(digit) => handleClickAge(1)}
               style={selectedAge === 1 ? pushedButton : {}}
@@ -129,9 +135,13 @@ const LifeStyle = () => {
             </CircleButton>
           </div>
           <div
-            style={selectedTimeSpend === -1 ? { border: "5px solid red " } : {}}
+            style={
+              selectedTimeSpend === -1
+                ? { animation: "border-pulsate 2s infinite" }
+                : {}
+            }
           >
-            <p>Mostly spend your time: </p>
+            <p>Mostly spend time: </p>
             <div
               onClick={(digit) => handleClickTimeSpend(1)}
               style={selectedTimeSpend === 1 ? pushedButton : {}}
@@ -161,7 +171,11 @@ const LifeStyle = () => {
         </FirstContainer>
 
         <SecondContainer
-          style={selectedDistance === -1 ? { border: "5px solid red " } : {}}
+          style={
+            selectedDistance === -1
+              ? { animation: "border-pulsate 2s infinite" }
+              : {}
+          }
         >
           <div>
             <p>Distance you most focus during day:</p>
@@ -198,7 +212,11 @@ const LifeStyle = () => {
           </div>
         </SecondContainer>
         <ThirdContainer
-          style={selectedDeviceRead === -1 ? { border: "5px solid red " } : {}}
+          style={
+            selectedDeviceRead === -1
+              ? { animation: "border-pulsate 2s infinite" }
+              : {}
+          }
         >
           <div>
             <p>device you read most:</p>
@@ -217,7 +235,11 @@ const LifeStyle = () => {
           ></div>
         </ThirdContainer>
         <FourthContainer
-          style={selectedDevice === -1 ? { border: "5px solid red " } : {}}
+          style={
+            selectedDevice === -1
+              ? { animation: "border-pulsate 2s infinite" }
+              : {}
+          }
         >
           <div>
             <p>device you spend most of your time:</p>
@@ -240,7 +262,11 @@ const LifeStyle = () => {
           ></div>
         </FourthContainer>
         <FifthContainer
-          style={selectedDrive === -1 ? { border: "5px solid red " } : {}}
+          style={
+            selectedDrive === -1
+              ? { animation: "border-pulsate 2s infinite" }
+              : {}
+          }
         >
           <div>
             <p>How often do you drive:</p>
@@ -271,7 +297,11 @@ const LifeStyle = () => {
           </div>
         </FifthContainer>
         <SixthContainer
-          style={selectedActivity === -1 ? { border: "5px solid red " } : {}}
+          style={
+            selectedActivity === -1
+              ? { animation: "border-pulsate 2s infinite" }
+              : {}
+          }
         >
           <div>
             <p>regular activity :</p>
