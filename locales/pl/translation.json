@@ -8,5 +8,12 @@
   "Life style": "Styl życia",
   "Prescript": "Korekcja",
   "Frame": "Oprawa",
-  "Order": "Zamówienie"
+  "Order": "Zamówienie",
+  "Welcome to Hoya Identifier!": "Witaj w Hoya Identifier",
+  "Welcome to the lens design selector!": "Witamy w aplikacji wspomagającej wybór konstrukcji soczewek!",
+  "To get a good impression of your viewing behaviour, a number of questions will now follow.": "Aby zrozumieć Twoje potrzeby wzrokowe, zadamy Ci kilka pytań.",
+  "Firstly put some id of consultation": "Na początek wprowadź numer komisyjny konsultacji",
+  "Chose lenses you want to personalize": "Wybierz soczewki, które chcesz spersonalizować",
+  "placeholder": "Numer komisyjny",
+  "next": "dalej"
 }
