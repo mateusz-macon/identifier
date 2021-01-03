@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
   left: 15%;
   width: 70%;
   height: 80%;
-  background-color: black;
+  background-color: green;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
