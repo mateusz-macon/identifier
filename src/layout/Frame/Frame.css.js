@@ -68,6 +68,7 @@ export const LeftColumn = styled.div`
           outline-style: solid;
           box-shadow: none;
         }
+      }
     }
   }
 `;
@@ -113,6 +114,7 @@ flex-grow: 1;
           outline-style: solid;
           box-shadow: none;
         }
+      }
     }
   }
 `;
